@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <title>Prasówa Maker</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__title">Prasówa Maker</h1>
+  </header>
+  <main class="content">
+    <div class="btnContainer">
+      <button type="button" id="all" class="btn--lg">
+        <span>Zrób prasówkę</span>
+      </button>
+    </div>
+    <div class="btnContainer">
+      <button type="button" id="pl" class="btn">
+        <span>Polska</span>
+      </button>
+      <button type="button" id="wrld" class="btn">
+        <span>Świat</span>
+      </button>
+    </div>
+    <div class="progressbar">
+      <span class="progress"></span>
+    </div>
+    <div id="alert">
+      <h2 class="success">Prasówka jest gotowa!</h2>
+      <div class="btnContainer">
+        <button type="button" id="file" class="btn">
+          <span>Otwórz plik</span>
+        </button>
+        <button type="button" id="folder" class="btn">
+          <span>Otwórz folder</span>
+        </button>
+      </div>
+    </div>
+    <div>
+      <input class="main__input" type="number" id="newsamount" min="1" max="30" maxlength="2" placeholder="5">
+      <span class="main__tooltip" tooltip="Ilość szukanych wiadomości" flow="right"></span>
+    </div>
+  </main>
+  <footer class="footer">
+    <p class="footer__text">
+      Prasówa maker made by
+      <a class="footer__link" href="#">Karol Waliszewski</a> with
+      <span class="footer__heart">❤</span>
+    </p>
+  </footer>
+  <script>
+    require('./js/main');
+  </script>
+</body>
+
+</html>

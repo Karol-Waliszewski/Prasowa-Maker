@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=latin-ext");
+/* line 5, style.scss */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+/* line 13, style.scss */
+body {
+  background: #ecf0f1;  overflow: hidden; }
+
+/* line 17, style.scss */
+.header {
+  margin-top: 70px;
+  margin-bottom: 65px; }
+
+/* line 22, style.scss */
+.header__title {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+/* line 33, style.scss */
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/* line 40, style.scss */
+.btnContainer {
+  margin-bottom: 1rem; }
+
+/* line 44, style.scss */
+.btn, .btn--lg {
+  height: 36px;
+  border-radius: 2px;
+  top: 0;
+  border: none;
+  background: #1abc9c;
+  cursor: pointer;
+  -webkit-transition: 250ms;
+  transition: 250ms; }
+  /* line 53, style.scss */
+  .btn span, .btn--lg span {
+    position: relative;
+    opacity: 1;
+    font-size: 14px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: white; }
+  /* line 67, style.scss */
+  .btn:hover, .btn--lg:hover {
+    background: #169d82; }
+
+/* line 72, style.scss */
+.btn--lg {
+  height: 64px; }
+  /* line 76, style.scss */
+  .btn--lg span {
+    font-size: 18px;
+    padding-left: 40px;
+    padding-right: 40px; }
+
+/* line 83, style.scss */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  padding: 0 30px;
+  background: #dde4e6; }
+
+/* line 93, style.scss */
+.footer__text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #898989;
+  text-align: right;
+  line-height: 50px; }
+
+/* line 101, style.scss */
+.footer__link {
+  color: #1abc9c; }
+  /* line 104, style.scss */
+  .footer__link:hover {
+    color: #169d82; }
+
+/* line 109, style.scss */
+.footer__heart {
+  color: #e74c3c; }
+
+/* line 113, style.scss */
+.progressbar {
+  display: none;
+  margin-top: 2rem;
+  margin-bottom: 1.4rem;
+  border: 1px solid #169d82;
+  border-radius: 20px;
+  height: 1.3rem;
+  width: 75%; }
+  /* line 122, style.scss */
+  .progressbar .progress {
+    display: block;
+    height: 100%;
+    background: #1abc9c;
+    border-radius: 20px; }
+
+/* line 130, style.scss */
+#alert {
+  display: none;
+  margin-top: 1.3rem; }
+
+/* line 135, style.scss */
+.success {
+  text-align: center;
+  color: #1abc9c;
+  font-weight: 300;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem; }
+
+/* line 143, style.scss */
+.main__input {
+  position: fixed;
+  bottom: 60px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  border: 0 solid #1abc9c;
+  border-radius: 3px;
+  background: none;
+  color: #1abc9c;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  -webkit-transition: 300ms;
+  transition: 300ms; }
+  /* line 158, style.scss */
+  .main__input::-webkit-input-placeholder {
+    color: #1abc9c;
+    font-weight: 500; }
+  .main__input:-ms-input-placeholder {
+    color: #1abc9c;
+    font-weight: 500; }
+  .main__input::placeholder {
+    color: #1abc9c;
+    font-weight: 500; }
+  /* line 163, style.scss */
+  .main__input:focus {
+    background: #1abc9c;
+    outline-color: #28e1bd;
+    color: #fff; }
+  /* line 170, style.scss */
+  .main__input:focus::-webkit-input-placeholder {
+    color: #fff;
+    font-weight: 700; }
+  .main__input:focus:-ms-input-placeholder {
+    color: #fff;
+    font-weight: 700; }
+  .main__input:focus::placeholder {
+    color: #fff;
+    font-weight: 700; }
+  /* line 174, style.scss */
+  .main__input:focus + .main__tooltip {
+    display: block; }
+
+/* line 179, style.scss */
+.main__tooltip {
+  display: none;
+  bottom: 75px;
+  left: 52px;
+  color: #888;
+  font-weight: 500; }
+
+/* line 188, style.scss */
+.register__input {
+  display: inline-block;
+  margin: 0.5rem 5px;
+  margin-bottom: 4rem;
+  width: 80px;
+  height: 40px;
+  border: 0 solid #1abc9c;
+  border-radius: 3px;
+  background: none;
+  color: #1abc9c;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  -webkit-transition: 300ms;
+  transition: 300ms; }
+  /* line 203, style.scss */
+  .register__input::-webkit-input-placeholder {
+    color: #1abc9c;
+    font-weight: 500; }
+  .register__input:-ms-input-placeholder {
+    color: #1abc9c;
+    font-weight: 500; }
+  .register__input::placeholder {
+    color: #1abc9c;
+    font-weight: 500; }
+  /* line 208, style.scss */
+  .register__input:focus {
+    background: #1abc9c;
+    outline-color: #28e1bd;
+    color: #fff; }
+  /* line 215, style.scss */
+  .register__input:focus::-webkit-input-placeholder {
+    color: #fff;
+    font-weight: 700; }
+  .register__input:focus:-ms-input-placeholder {
+    color: #fff;
+    font-weight: 700; }
+  .register__input:focus::placeholder {
+    color: #fff;
+    font-weight: 700; }
+
+/* line 221, style.scss */
+.alert {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 1rem; }
+  /* line 225, style.scss */
+  .alert p {
+    margin: 0.2rem 0; }
+
+/* line 228, style.scss */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* START TOOLTIP STYLES */
+/* line 3, _tooltip.scss */
+[tooltip] {
+  position: fixed;
+  /* opinion 1 */
+  cursor: help; }
+
+/* Applies to all tooltips */
+/* line 10, _tooltip.scss */
+[tooltip]::after,
+[tooltip]::before {
+  text-transform: none;
+  /* opinion 2 */
+  font-size: 0.9em !important;
+  /* opinion 3 */
+  line-height: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  position: absolute;
+  display: none;
+  opacity: 0; }
+
+/* line 24, _tooltip.scss */
+[tooltip]::before {
+  content: '';
+  border: 5px solid transparent;
+  /* opinion 4 */
+  z-index: 1001;
+  /* absurdity 1 */ }
+
+/* line 32, _tooltip.scss */
+[tooltip]::after {
+  content: attr(tooltip);
+  /* magic! */
+  /* most of the rest of this is opinion */
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  /*
+    Let the content set the size of the tooltips
+    but this will also keep them from being obnoxious
+    */
+  min-width: 3em;
+  max-width: 21em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 1ch 1.5ch;
+  border-radius: 0.3ch;
+  -webkit-box-shadow: 0 1em 2em -0.5em rgba(0, 0, 0, 0.35);
+          box-shadow: 0 1em 2em -0.5em rgba(0, 0, 0, 0.35);
+  background: #333;
+  color: #fff;
+  z-index: 1000;
+  /* absurdity 2 */ }
+
+/* Make the tooltips respond to hover */
+/* line 57, _tooltip.scss */
+.main__input:focus + [tooltip]::after,
+.main__input:focus + [tooltip]::before,
+[tooltip]:hover::after,
+[tooltip]:hover::before {
+  display: block; }
+
+/* don't show empty tooltips */
+/* line 65, _tooltip.scss */
+[tooltip='']::before,
+[tooltip='']::after {
+  display: none !important; }
+
+/* FLOW: UP */
+/* line 71, _tooltip.scss */
+[tooltip]:not([flow])::before,
+[tooltip][flow^="up"]::before {
+  bottom: 100%;
+  border-bottom-width: 0;
+  border-top-color: #333; }
+
+/* line 78, _tooltip.scss */
+[tooltip]:not([flow])::after,
+[tooltip][flow^="up"]::after {
+  bottom: calc(100% + 5px); }
+
+/* line 83, _tooltip.scss */
+[tooltip]:not([flow])::after,
+[tooltip]:not([flow])::before,
+[tooltip][flow^="up"]::before,
+[tooltip][flow^="up"]::after {
+  left: 50%;
+  -webkit-transform: translate(-50%, -0.5em);
+          transform: translate(-50%, -0.5em); }
+
+/* FLOW: DOWN */
+/* line 92, _tooltip.scss */
+[tooltip][flow^="down"]::before {
+  top: 100%;
+  border-top-width: 0;
+  border-bottom-color: #333; }
+
+/* line 98, _tooltip.scss */
+[tooltip][flow^="down"]::after {
+  top: calc(100% + 5px); }
+
+/* line 102, _tooltip.scss */
+[tooltip][flow^="down"]::before,
+[tooltip][flow^="down"]::after {
+  left: 50%;
+  -webkit-transform: translate(-50%, 0.5em);
+          transform: translate(-50%, 0.5em); }
+
+/* FLOW: LEFT */
+/* line 109, _tooltip.scss */
+[tooltip][flow^="left"]::before {
+  top: 50%;
+  border-right-width: 0;
+  border-left-color: #333;
+  left: calc(0em - 5px);
+  -webkit-transform: translate(-0.5em, -50%);
+          transform: translate(-0.5em, -50%); }
+
+/* line 117, _tooltip.scss */
+[tooltip][flow^="left"]::after {
+  top: 50%;
+  right: calc(100% + 5px);
+  -webkit-transform: translate(-0.5em, -50%);
+          transform: translate(-0.5em, -50%); }
+
+/* FLOW: RIGHT */
+/* line 124, _tooltip.scss */
+[tooltip][flow^="right"]::before {
+  top: 50%;
+  border-left-width: 0;
+  border-right-color: #333;
+  right: calc(0em - 5px);
+  -webkit-transform: translate(0.5em, -50%);
+          transform: translate(0.5em, -50%); }
+
+/* line 132, _tooltip.scss */
+[tooltip][flow^="right"]::after {
+  top: 50%;
+  left: calc(100% + 5px);
+  -webkit-transform: translate(0.5em, -50%);
+          transform: translate(0.5em, -50%); }
+
+/* KEYFRAMES */
+@-webkit-keyframes tooltips-vert {
+  to {
+    opacity: 0.9;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); } }
+@keyframes tooltips-vert {
+  to {
+    opacity: 0.9;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); } }
+@-webkit-keyframes tooltips-horz {
+  to {
+    opacity: 0.9;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%); } }
+@keyframes tooltips-horz {
+  to {
+    opacity: 0.9;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%); } }
+/* FX All The Things */
+/* line 152, _tooltip.scss */
+[tooltip]:not([flow]):hover::after,
+[tooltip]:not([flow]):hover::before,
+[tooltip][flow^="up"]:hover::before,
+[tooltip][flow^="up"]:hover::after,
+[tooltip][flow^="down"]:hover::before,
+[tooltip][flow^="down"]:hover::after {
+  -webkit-animation: tooltips-vert 300ms ease-out forwards;
+          animation: tooltips-vert 300ms ease-out forwards; }
+
+/* line 161, _tooltip.scss */
+[tooltip][flow^="left"]:hover::before,
+[tooltip][flow^="left"]:hover::after,
+.main__input:focus + [tooltip][flow^="right"]::before,
+.main__input:focus + [tooltip][flow^="right"]::after {
+  -webkit-animation: tooltips-horz 300ms ease-out forwards;
+          animation: tooltips-horz 300ms ease-out forwards; }
+
+/*# sourceMappingURL=style.css.map */
