@@ -21,6 +21,9 @@ app.on('ready', () => {
   // Creating new window
   let win = new BrowserWindow(BrowserOptions);
 
+  // Dev Tools
+  //win.webContents.openDevTools();
+
   // Loading index.html view
   win.loadURL(`file://${__dirname}/app/index.html`);
 

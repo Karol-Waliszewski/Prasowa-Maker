@@ -76,7 +76,7 @@ var News = (function() {
             // Calling request
             rp({
                 uri: articlesUrls[j],
-                transform: function(body) {
+                transform: function(body) { 
                   return cheerio.load(body);
                 }
               })
@@ -84,7 +84,7 @@ var News = (function() {
 
                 // Getting content to file
                 let heading = $$('.entry-title.cb-entry-title.cb-title').text();
-                let content = $$('article p').text();
+                let content = $$('article>p').text();
 
                 // Saving content to file
                 saveNews(folder, file, heading + '\r\n');

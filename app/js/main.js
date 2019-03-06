@@ -74,7 +74,7 @@ document.getElementById('folder').addEventListener('click', function() {
 });
 
 document.querySelector('.footer__link').addEventListener('click', function() {
-  shell.openExternal('https://facebook.com/k.waliszewski')
+  shell.openExternal('https://karol-waliszewski.github.io/');
 });
 
 document.getElementById('newsamount').addEventListener('change', function() {
