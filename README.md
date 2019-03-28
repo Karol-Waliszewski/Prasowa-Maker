@@ -6,11 +6,11 @@
 
 ## Screenshots
 
-![](screenshots/maker.jpg)
+![](maker.jpg)
 
-![](screenshots/loading.jpg)
+![](loading.jpg)
 
-![](screenshots/ready.jpg)
+![](ready.jpg)
 
 ## Meta
 
