@@ -1,28 +1,26 @@
 // Requirements
-const {
-  app,
-  BrowserWindow,
-  Menu,
-} = require('electron');
-const path = require('path');
+const { app, BrowserWindow, Menu } = require("electron");
+const path = require("path");
 
 // Options
 const BrowserOptions = {
   width: 600,
   heigth: 400,
   show: false,
-  backgroundColor: '#ecf0f1',
+  backgroundColor: "#ecf0f1",
   transparent: true,
-  icon: path.join(__dirname, '/app/assets/icon.ico')
+  icon: path.join(__dirname, "/app/assets/icon.ico"),
+  webPreferences: {
+    nodeIntegration: true
+  }
 };
 
-app.on('ready', () => {
-
+app.on("ready", () => {
   // Creating new window
   let win = new BrowserWindow(BrowserOptions);
 
   // Dev Tools
-  //win.webContents.openDevTools();
+  win.webContents.openDevTools();
 
   // Loading index.html view
   win.loadURL(`file://${__dirname}/app/index.html`);
@@ -31,14 +29,13 @@ app.on('ready', () => {
   Menu.setApplicationMenu(null);
 
   // Creating show event
-  win.once('ready-to-show', () => {
-    win.show()
-  })
+  win.once("ready-to-show", () => {
+    win.show();
+  });
 
   // Creating close event
-  win.on('closed', () => {
+  win.on("closed", () => {
     win = null;
     app.quit();
   });
-
 });

@@ -60,6 +60,7 @@ typings/
 
 # .locks
 *.lock
+*-lock.json
 
 # prasowki
 prasowki
