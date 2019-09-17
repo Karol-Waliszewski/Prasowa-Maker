@@ -2,7 +2,9 @@
 
 > Tool for easy and fast newspaper review creation in Polish language. 
 
-**You can download the tool *[here](http://prasowamaker.ct8.pl/)*** ✅.
+**You can download the tool *[here (x64)](http://www.mediafire.com/file/ywrse84xdscl4y9/PrasowaMaker_Setup%2528x64%2529.exe/file)*** ✅.
+
+*[Alternative download (x32)](http://www.mediafire.com/file/1f27i8pyaijz24c/PrasowaMaker_Setup%2528x32%2529.exe/file)*
 
 ## Screenshots
 
