@@ -1,7 +1,6 @@
 var News = (function() {
   // Requirements
   const cheerio = require("cheerio");
-  const rp = require("request-promise");
   const axios = require("axios");
   const fs = require("fs");
   const Progress = require("./progress");
